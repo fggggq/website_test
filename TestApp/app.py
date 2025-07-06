@@ -11,8 +11,7 @@ app=Flask(__name__)
 app.register_blueprint(main_views)
 app.register_blueprint(auth_views)
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port= 5001 ,debug=True)
 
-# http://127.0.0.1:5000/
+# http://127.0.0.1:5001/
